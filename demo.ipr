@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="war" name="Gradle : com.zhq:demo : demo-1.0-SNAPSHOT.war">
+      <output-path>$PROJECT_DIR$/out/artifacts/demo</output-path>
+      <properties id="gradle-properties">
+        <options external-project-path="$PROJECT_DIR$" />
+      </properties>
+      <root id="archive" name="demo-1.0-SNAPSHOT.war">
+        <element id="javaee-facet-resources" facet="demo/web/Web Gradle : demo-1.0-SNAPSHOT.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="demo" />
+            <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-web:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:springloaded:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-oxm:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: commons-dbcp:commons-dbcp:1.4" />
+            <element id="library" level="project" name="Gradle: ojdbc:ojdbc:6" />
+            <element id="library" level="project" name="Gradle: org.apache.poi:poi:3.11" />
+            <element id="library" level="project" name="Gradle: org.apache.poi:poi-ooxml:3.11" />
+            <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.3.2" />
+            <element id="library" level="project" name="Gradle: commons-io:commons-io:2.4" />
+            <element id="library" level="project" name="Gradle: commons-fileupload:commons-fileupload:1.3.1" />
+            <element id="library" level="project" name="Gradle: org.apache.commons:commons-collections4:4.0" />
+            <element id="library" level="project" name="Gradle: net.sf.dozer:dozer:5.4.0" />
+            <element id="library" level="project" name="Gradle: com.alibaba:fastjson:1.2.4" />
+            <element id="library" level="project" name="Gradle: com.h2database:h2:1.3.176" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-core:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-template:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-jsp:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf.extras:thymeleaf-extras-tiles2-spring4:2.1.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.7" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.5.1" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-aop:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.hibernate:hibernate-entitymanager:4.3.7.Final" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-orm:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-jpa:1.7.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-aspects:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+            <element id="library" level="project" name="Gradle: org.mockito:mockito-core:1.10.8" />
+            <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-library:1.3" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-test:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-config:3.2.5.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-web:3.2.5.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.hibernate:hibernate-validator:5.1.3.Final" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.14" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: commons-pool:commons-pool:1.5.4" />
+            <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.9" />
+            <element id="library" level="project" name="Gradle: org.apache.poi:poi-ooxml-schemas:3.11" />
+            <element id="library" level="project" name="Gradle: commons-beanutils:commons-beanutils:1.8.3" />
+            <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.6.6" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-api:2.2.2" />
+            <element id="library" level="project" name="Gradle: commons-digester:commons-digester:2.0" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-servlet:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf.extras:thymeleaf-extras-tiles2:2.1.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.5.1" />
+            <element id="library" level="project" name="Gradle: org.aspectj:aspectjrt:1.8.4" />
+            <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.8.4" />
+            <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.1.3.GA" />
+            <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" />
+            <element id="library" level="project" name="Gradle: org.hibernate:hibernate-core:4.3.7.Final" />
+            <element id="library" level="project" name="Gradle: dom4j:dom4j:1.6.1" />
+            <element id="library" level="project" name="Gradle: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final" />
+            <element id="library" level="project" name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
+            <element id="library" level="project" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final" />
+            <element id="library" level="project" name="Gradle: org.javassist:javassist:3.18.1-GA" />
+            <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-commons:1.9.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.objenesis:objenesis:2.1" />
+            <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+            <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-core:3.2.5.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-logging-juli:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.0.15" />
+            <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
+            <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.0.0" />
+            <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:1.7.7" />
+            <element id="library" level="project" name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0" />
+            <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.0.15" />
+            <element id="library" level="project" name="Gradle: antlr:antlr:2.7.7" />
+            <element id="library" level="project" name="Gradle: org.jboss:jandex:1.1.0.Final" />
+            <element id="library" level="project" name="Gradle: xml-apis:xml-apis:1.0.b2" />
+            <element id="library" level="project" name="Gradle: stax:stax-api:1.0.1" />
+            <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.7" />
+            <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.7" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf:2.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: ognl:ognl:3.0.6" />
+            <element id="library" level="project" name="Gradle: org.unbescape:unbescape:1.0" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.5.1" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.5.0" />
+            <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.20" />
+            <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+            <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/demo/exploded/demo-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Gradle : com.zhq:demo : demo-1.0-SNAPSHOT.war (exploded)">
+      <output-path>$PROJECT_DIR$/out/artifacts/demo/exploded/demo-1.0-SNAPSHOT.war</output-path>
+      <properties id="gradle-properties">
+        <options external-project-path="$PROJECT_DIR$" />
+      </properties>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="demo/web/Web Gradle : demo-1.0-SNAPSHOT.war" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="demo" />
+            <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-web:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:springloaded:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-oxm:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: commons-dbcp:commons-dbcp:1.4" />
+            <element id="library" level="project" name="Gradle: ojdbc:ojdbc:6" />
+            <element id="library" level="project" name="Gradle: org.apache.poi:poi:3.11" />
+            <element id="library" level="project" name="Gradle: org.apache.poi:poi-ooxml:3.11" />
+            <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.3.2" />
+            <element id="library" level="project" name="Gradle: commons-io:commons-io:2.4" />
+            <element id="library" level="project" name="Gradle: commons-fileupload:commons-fileupload:1.3.1" />
+            <element id="library" level="project" name="Gradle: org.apache.commons:commons-collections4:4.0" />
+            <element id="library" level="project" name="Gradle: net.sf.dozer:dozer:5.4.0" />
+            <element id="library" level="project" name="Gradle: com.alibaba:fastjson:1.2.4" />
+            <element id="library" level="project" name="Gradle: com.h2database:h2:1.3.176" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-core:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-template:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-jsp:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf.extras:thymeleaf-extras-tiles2-spring4:2.1.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.7" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.5.1" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-aop:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.hibernate:hibernate-entitymanager:4.3.7.Final" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-orm:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-jpa:1.7.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-aspects:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+            <element id="library" level="project" name="Gradle: org.mockito:mockito-core:1.10.8" />
+            <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-library:1.3" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-test:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-config:3.2.5.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-web:3.2.5.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.hibernate:hibernate-validator:5.1.3.Final" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.2.0.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.14" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: commons-pool:commons-pool:1.5.4" />
+            <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.9" />
+            <element id="library" level="project" name="Gradle: org.apache.poi:poi-ooxml-schemas:3.11" />
+            <element id="library" level="project" name="Gradle: commons-beanutils:commons-beanutils:1.8.3" />
+            <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.6.6" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-api:2.2.2" />
+            <element id="library" level="project" name="Gradle: commons-digester:commons-digester:2.0" />
+            <element id="library" level="project" name="Gradle: org.apache.tiles:tiles-servlet:2.2.2" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf.extras:thymeleaf-extras-tiles2:2.1.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.5.1" />
+            <element id="library" level="project" name="Gradle: org.aspectj:aspectjrt:1.8.4" />
+            <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.8.4" />
+            <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.1.3.GA" />
+            <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" />
+            <element id="library" level="project" name="Gradle: org.hibernate:hibernate-core:4.3.7.Final" />
+            <element id="library" level="project" name="Gradle: dom4j:dom4j:1.6.1" />
+            <element id="library" level="project" name="Gradle: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final" />
+            <element id="library" level="project" name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
+            <element id="library" level="project" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final" />
+            <element id="library" level="project" name="Gradle: org.javassist:javassist:3.18.1-GA" />
+            <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-commons:1.9.1.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.objenesis:objenesis:2.1" />
+            <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+            <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-core:3.2.5.RELEASE" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-logging-juli:8.0.15" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.0.15" />
+            <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
+            <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.0.0" />
+            <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:1.7.7" />
+            <element id="library" level="project" name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0" />
+            <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+            <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.0.15" />
+            <element id="library" level="project" name="Gradle: antlr:antlr:2.7.7" />
+            <element id="library" level="project" name="Gradle: org.jboss:jandex:1.1.0.Final" />
+            <element id="library" level="project" name="Gradle: xml-apis:xml-apis:1.0.b2" />
+            <element id="library" level="project" name="Gradle: stax:stax-api:1.0.1" />
+            <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.7" />
+            <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.7" />
+            <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf:2.1.3.RELEASE" />
+            <element id="library" level="project" name="Gradle: ognl:ognl:3.0.6" />
+            <element id="library" level="project" name="Gradle: org.unbescape:unbescape:1.0" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.5.1" />
+            <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.5.0" />
+            <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.20" />
+            <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+            <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/demo/exploded/demo-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+        </element>
+      </root>
+    </artifact>
+  </component>
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:/Gradle/gradle-2.6" />
+        <option name="gradleJvm" value="1.7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="Gradle: antlr:antlr:2.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: aopalliance:aopalliance:1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.alibaba:fastjson:1.2.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.4/fastjson-1.2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.5.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.5.0/a2a55a3375bc1cef830ca426d68d2ea22961190e/jackson-annotations-2.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.5.0/88b177349b719fe0636b50889687b9ed036bfd89/jackson-annotations-2.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.core:jackson-core:2.5.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.5.1/e2a00ad1d7e540ec395e9296a34da484c8888d4d/jackson-core-2.5.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.5.1/4e5efde4b46995149e5e5bddf052730063ad47fa/jackson-core-2.5.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.5.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.5.1/5e57baebad3898aca8a825adaf2be6fd189442f2/jackson-databind-2.5.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.5.1/282fddba73c32389481c4107bed4fb6206d8349b/jackson-databind-2.5.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.5.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-hibernate4/2.5.1/jackson-datatype-hibernate4-2.5.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.fasterxml:classmate:1.0.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.h2database:h2:1.3.176">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.3.176/h2-1.3.176.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.jayway.jsonpath:json-path:0.9.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/0.9.1/json-path-0.9.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: commons-beanutils:commons-beanutils:1.8.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: commons-codec:commons-codec:1.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.9/commons-codec-1.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: commons-dbcp:commons-dbcp:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: commons-digester:commons-digester:2.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.0/3dbd8a76683cd563583a2c78c356ad8b8acf38bf/commons-digester-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.0/abc81a9857b4d396ec8093f023f42e06b01e975a/commons-digester-2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: commons-fileupload:commons-fileupload:1.3.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.3.1/commons-fileupload-1.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: commons-io:commons-io:2.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: commons-logging:commons-logging:1.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: commons-pool:commons-pool:1.5.4">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.4/75b6e20c596ed2945a259cea26d7fadd298398e6/commons-pool-1.5.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.4/3e226507788e09f02eef641e868624fb823af6e6/commons-pool-1.5.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: dom4j:dom4j:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: javax.servlet.jsp:jsp-api:2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: javax.servlet:javax.servlet-api:3.1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: javax.servlet:jstl:1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: javax.validation:validation-api:1.1.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: junit:junit:4.12">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: log4j:log4j:1.2.17">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: mysql:mysql-connector-java:5.1.20">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.20/66a2a9c6561dc2c3c6f0b924681c305be78f3377/mysql-connector-java-5.1.20.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: net.minidev:json-smart:1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/1.2/json-smart-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: net.sf.dozer:dozer:5.4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/dozer/dozer/5.4.0/dozer-5.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/nz/net/ultraq/thymeleaf/thymeleaf-layout-dialect/1.2.7/thymeleaf-layout-dialect-1.2.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: ognl:ognl:3.0.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.6/ognl-3.0.6.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: ojdbc:ojdbc:6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ojdbc/ojdbc/6/ojdbc-6.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.commons:commons-collections4:4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.commons:commons-lang3:3.3.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.poi:poi-ooxml-schemas:3.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.11/poi-ooxml-schemas-3.11.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.poi:poi-ooxml:3.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.11/poi-ooxml-3.11.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.poi:poi:3.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.11/poi-3.11.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tiles:tiles-api:2.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tiles:tiles-core:2.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tiles:tiles-jsp:2.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tiles:tiles-servlet:2.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-servlet/2.2.2/tiles-servlet-2.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tiles:tiles-template:2.2.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.0.15">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.15/acb0a3c681ee04cc5e391784263c1e636c65bbac/tomcat-embed-core-8.0.15.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.15/31d545923e67df638d1d1cc482d61873cde7c5f5/tomcat-embed-core-8.0.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:7.0.55">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-el/7.0.55/tomcat-embed-el-7.0.55.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.0.15">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.15/e228eb4dc0cfa1d116f0b1b2bb8185556cb1a9b/tomcat-embed-el-8.0.15.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.15/e4518347f2d15fd2fc21ab78489a3df2af26193f/tomcat-embed-el-8.0.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-logging-juli:8.0.15">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.15/a93593a43f0df8ac14acd43c3ee2ec3f0cfd587d/tomcat-embed-logging-juli-8.0.15.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.15/ee7edfca1a6402c38f62d92d2e7f601b72023c59/tomcat-embed-logging-juli-8.0.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.0.15">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.15/25b151fade3315279a07b020cb42c1af95ff366b/tomcat-embed-websocket-8.0.15.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.15/a662bda1d5c76198832af7ea3fca0f0fced9fc11/tomcat-embed-websocket-8.0.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat:tomcat-jdbc:8.0.15">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.0.15/fbcb410a342c1df5eb62be1f1c9e3356b4e30bbc/tomcat-jdbc-8.0.15.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.0.15/49b7362b84dc62055e0ae387e52953165e1d142d/tomcat-jdbc-8.0.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.tomcat:tomcat-juli:8.0.15">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.0.15/c53b9d462d477cc4731f78c9a033eabb638a9e04/tomcat-juli-8.0.15.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.0.15/b2656c0960477fd269c2d0982ca433042aaac808/tomcat-juli-8.0.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.aspectj:aspectjrt:1.8.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.4/aspectjrt-1.8.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.aspectj:aspectjweaver:1.8.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.4/aspectjweaver-1.8.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.fluttercode.datafactory:datafactory:0.8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/fluttercode/datafactory/datafactory/0.8/datafactory-0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hamcrest:hamcrest-library:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hibernate:hibernate-core:4.3.7.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hibernate:hibernate-entitymanager:4.3.7.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.7.Final/hibernate-entitymanager-4.3.7.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.hibernate:hibernate-validator:5.1.3.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.javassist:javassist:3.18.1-GA">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.jboss.logging:jboss-logging:3.1.3.GA">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.jboss:jandex:1.1.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.mockito:mockito-core:1.10.8">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.10.8/mockito-core-1.10.8.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.objenesis:objenesis:2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/2.1/objenesis-2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.slf4j:jcl-over-slf4j:1.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.slf4j:jul-to-slf4j:1.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jul-to-slf4j/1.7.7/jul-to-slf4j-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.slf4j:slf4j-api:1.7.5">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/654135274d4c27132ea208a4ec07f344bdb83bcb/slf4j-api-1.7.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.slf4j:slf4j-api:1.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.slf4j:slf4j-log4j12:1.6.6">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.6/5cd9b4fbc3ff6a97beaade3206137d76f65df805/slf4j-log4j12-1.6.6.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.6/497bfac9a678118e7ff75d1f3b8c3bcc06dc9c8c/slf4j-log4j12-1.6.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.2.0.RELEASE/spring-boot-autoconfigure-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-aop:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-aop/1.2.0.RELEASE/spring-boot-starter-aop-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.2.0.RELEASE/spring-boot-starter-data-jpa-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-jdbc/1.2.0.RELEASE/spring-boot-starter-jdbc-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/1.2.0.RELEASE/spring-boot-starter-logging-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-security:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-security/1.2.0.RELEASE/spring-boot-starter-security-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-test:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/1.2.0.RELEASE/spring-boot-starter-test-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-thymeleaf/1.2.0.RELEASE/spring-boot-starter-thymeleaf-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.2.0.RELEASE/4449cd387d132f1d695b8121b68265775f1551af/spring-boot-starter-tomcat-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.2.0.RELEASE/775dd2ee1b0d3af30d1357a33b86f3bc6d54ecae/spring-boot-starter-tomcat-1.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-web:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.2.0.RELEASE/spring-boot-starter-web-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/1.2.0.RELEASE/spring-boot-starter-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.boot:spring-boot:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.2.0.RELEASE/spring-boot-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.data:spring-data-commons:1.9.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.9.1.RELEASE/spring-data-commons-1.9.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.data:spring-data-jpa:1.7.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.7.1.RELEASE/spring-data-jpa-1.7.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.security:spring-security-config:3.2.5.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/3.2.5.RELEASE/spring-security-config-3.2.5.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.security:spring-security-core:3.2.5.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.5.RELEASE/spring-security-core-3.2.5.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework.security:spring-security-web:3.2.5.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.5.RELEASE/spring-security-web-3.2.5.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-aop:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.3.RELEASE/spring-aop-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-aspects:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aspects/4.1.3.RELEASE/spring-aspects-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-beans:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.3.RELEASE/spring-beans-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-context:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.3.RELEASE/spring-context-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-core:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.3.RELEASE/spring-core-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-expression:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.1.3.RELEASE/spring-expression-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-jdbc:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.3.RELEASE/spring-jdbc-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-orm:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.1.3.RELEASE/spring-orm-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-oxm:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-oxm/4.1.3.RELEASE/spring-oxm-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-test:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.3.RELEASE/spring-test-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-tx:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.1.3.RELEASE/spring-tx-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-web:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:spring-webmvc:4.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.3.RELEASE/spring-webmvc-4.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.springframework:springloaded:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/springloaded/1.2.0.RELEASE/springloaded-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.thymeleaf.extras:thymeleaf-extras-tiles2-spring4:2.1.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/extras/thymeleaf-extras-tiles2-spring4/2.1.1.RELEASE/thymeleaf-extras-tiles2-spring4-2.1.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.thymeleaf.extras:thymeleaf-extras-tiles2:2.1.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/extras/thymeleaf-extras-tiles2/2.1.1.RELEASE/thymeleaf-extras-tiles2-2.1.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf-spring4/2.1.3.RELEASE/thymeleaf-spring4-2.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.thymeleaf:thymeleaf:2.1.3.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/2.1.3.RELEASE/thymeleaf-2.1.3.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.unbescape:unbescape:1.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/unbescape/unbescape/1.0/unbescape-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: org.yaml:snakeyaml:1.14">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: stax:stax-api:1.0.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: xml-apis:xml-apis:1.0.b2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+</project>

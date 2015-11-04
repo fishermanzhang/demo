@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="zh-cn">
+    <title>添加界面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--<form:form action="${path}/user/add" modelAttribute="user" method="post">-->
+<form th:action="@{/user/add}" th:object="${user}" th:method="post">
+    <div>
+        <table>
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" th:field="*{username}"/></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="text" th:field="*{password}"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="添加" id="btn" name="btn"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+</html>

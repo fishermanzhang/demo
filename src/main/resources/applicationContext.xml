@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--支持注解-->
+    <context:annotation-config/>
+    <!-- 需要扫描的包 -->
+    <context:component-scan base-package="com.zhq.controller"/>
+    <!-- 配置视图解析器: 如何把 handler 方法返回值解析为实际的物理视图 -->
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>-->
+
+    <!-- thymeleaf的视图解析器 -->
+    <bean id="templateResolver"
+          class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="/thymeleaf/" />
+        <property name="suffix" value=".html" />
+        <property name="templateMode" value="HTML5" />
+        <!-- Template cache is set to false (default is true).        -->
+        <property name="cacheable" value="false" />
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
+
+    <bean id="templateEngine"
+          class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver" />
+    </bean>
+
+    <bean id="thymeleafViewResolver"
+          class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine" />
+        <property name="characterEncoding" value="UTF-8" />
+    </bean>
+    <!-- 默认装配好一个LocalValidatorFactoryBean -->
+    <mvc:annotation-driven />
+
+
+    <!--1.dataSource-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/tz-zhq" />
+        <property name="username" value="root" />
+        <property name="password" value="root" />
+    </bean>
+
+    <!--2.jpaVendorAdapter-->
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <!--showSql-->
+        <property name="showSql" value="true"/>
+        <!--generate ddl-->
+        <property name="generateDdl" value="false"/>
+        <!--database dialect-->
+        <property name="databasePlatform" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+    </bean>
+
+    <!--3.entityManagerFactory-->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+        <!-- config in persistence.xml-->
+        <property name="persistenceXmlLocation" value="classpath:persistence.xml"/>
+        <property name="persistenceUnitName" value="myPersistence" />
+        <property name="jpaPropertyMap">
+            <map>
+                <entry key="hibernate.ejb.interceptor" value="com.zhq.util.EntityInterceptor"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="jpaDialect" class="org.springframework.orm.jpa.vendor.HibernateJpaDialect" />
+    <!--4.transactionManager-->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+        <property name="dataSource" ref="dataSource" />
+        <property name="jpaDialect" ref="jpaDialect" />
+    </bean>
+
+    <!--5.注解风格的声明式事务-->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+    <!--6.使用 spring data 简化 dao 开发-->
+    <jpa:repositories base-package="com.zhq.dao" />
+
+    <bean class="com.zhq.AppConfig"/>
+
+</beans>

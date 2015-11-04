@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: net.minidev:json-smart:1.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/1.2/json-smart-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

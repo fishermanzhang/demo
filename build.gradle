@@ -1,0 +1,227 @@
+group = 'com.zhq'
+version = '0.1-SNAPSHOT'
+
+defaultTasks 'clean', //清空各种临时文件
+        'war', //打 war 包
+        'test', //单元测试
+        'itTomcatRun', //启动tomcat
+        'sit' //集成测试
+
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        //tomcat7 debug steps:
+        //1.import as gradle project
+        //2.create gradle tomcatRun
+        //and set VM options for debug usage : -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+        //3.run gradle tomcatRun
+        //4.create remote debug 5005
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.1'
+    }
+}
+
+// Apply the java plugins here...
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'com.bmuschko.tomcat'
+apply plugin: "groovy"
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'jacoco'
+apply plugin: 'project-report'
+apply plugin: 'maven'
+
+//编译级别
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+//设置编码
+compileJava.options.encoding = 'UTF-8'
+compileGroovy.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+compileTestGroovy.options.encoding = 'UTF-8'
+
+//设置源码路径
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src/main/groovy', 'src/main/java']
+        }
+        java {srcDirs = []}
+    }
+    test {
+        groovy {
+            srcDirs = ['src/test/java', 'src/test/groovy']
+        }
+        java{srcDirs = []}
+    }
+}
+
+//tomcat 运行参数
+tomcat {
+    httpPort = 8888
+    stopPort = 9999
+}
+tomcatRun{
+    contextPath= 'demo'
+    URIEncoding= 'UTF-8'
+    reloadable = 'false'
+}
+
+//checkstyle config文件地址
+checkstyle {
+    toolVersion = "5.0"
+    ignoreFailures = false
+    configFile = file("$project.projectDir/config/checkstyle/checkstyle.xml")
+}
+
+findbugs {
+    effort = "max"
+    reportLevel = "medium"
+    excludeFilter = file("$project.projectDir/config/findbugs/exclude.xml")
+    //see more: https://docs.gradle.org/current/dsl/org.gradle.api.plugins.quality.FindBugsExtension.html
+}
+//FindBugs 产生 html 文件
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+tasks.withType(Test) {
+    //report dir
+    systemProperty "geb.build.reportsDir", reporting.file("$projectDir/build/firefoxTest/geb")
+    //project url
+    println "contextPath: $tomcatRun.contextPath"
+    systemProperty "com.tz.business.project.url", "$tomcatRun.contextPath"
+    //log info
+    testLogging {
+        events "passed","failed","standardError"
+    }
+}
+//配置忽略的依赖
+configurations {
+    all*.exclude group: "org.springframework.boot", module: "spring-boot-starter-tomcat"
+    all*.exclude group: "org.antlr", module: "antlr4-runtime"
+    all*.exclude group: "ch.qos.logback", module: "logback-classic"
+    all*.exclude group: "org.apache.tomcat", module: "tomcat-jdbc"
+    all*.exclude group: 'org.slf4j', module: 'log4j-over-slf4j'
+}
+
+repositories {
+    mavenLocal()
+//    mavenCentral()
+    jcenter()
+}
+
+//task -- 启动 daemon Tomcat
+task itTomcatRun(type: com.bmuschko.gradle.tomcat.tasks.TomcatRun) {
+    daemon = true
+}
+
+//在 check 之前先启动 daemon tomcat
+check.dependsOn itTomcatRun
+
+//运行tomcatRun必须check跑过
+//tomcatRun.dependsOn check
+//运行test完成之后执行jacocoTestReport
+test.finalizedBy jacocoTestReport
+
+task writeNewPom << {
+    pom {
+        project {
+            inceptionYear '2014'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("$buildDir/pom.xml")
+    //}.writeTo("$projectDir/pom.xml")
+
+}
+
+//声明依赖
+dependencies {
+    def springbootVersion = '1.2.0.RELEASE'
+    def tilesVersion = '2.2.2'
+    def thymeleafVersion = '2.1.1.RELEASE'
+    def poiVersion = '3.11'
+    def tomcatVersion = '7.0.55'
+    def groovyVersion = '2.4.4'
+    def gebVersion = '0.10.0'
+    def seleniumVersion = '2.45.0'
+
+    checkstyle "checkstyle:checkstyle:5.0"
+
+    compile "org.springframework.boot:spring-boot-starter-data-jpa:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter-test:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter-security:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter-web:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter-thymeleaf:$springbootVersion"
+    compile "org.springframework:springloaded:$springbootVersion"
+    compile "org.springframework:spring-oxm:4.1.7.RELEASE"
+
+    compile "commons-dbcp:commons-dbcp:1.4"
+    compile "org.apache.poi:poi:$poiVersion"
+    compile "org.apache.poi:poi-ooxml:$poiVersion"
+    compile "org.apache.commons:commons-lang3:3.3.2"
+    compile "commons-io:commons-io:2.4"
+    compile "commons-fileupload:commons-fileupload:1.3.1"
+    compile "org.apache.commons:commons-collections4:4.0"
+    compile "net.sf.dozer:dozer:5.4.0"
+    compile "com.alibaba:fastjson:1.2.4"
+    compile "com.h2database:h2:1.3.176"
+
+    //groovy
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile 'org.apache.ant:ant:1.9.4'
+
+//    tiles
+    compile "org.apache.tiles:tiles-core:$tilesVersion"
+    compile "org.apache.tiles:tiles-template:$tilesVersion"
+    compile "org.apache.tiles:tiles-jsp:$tilesVersion"
+//    thymeleaf-extras-tiles2-spring4
+    compile "org.thymeleaf.extras:thymeleaf-extras-tiles2-spring4:$thymeleafVersion"
+    compile "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.7"
+//    json data type enhancement
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.5.1"
+    providedCompile "org.fluttercode.datafactory:datafactory:0.8"
+
+    providedCompile "javax.servlet:javax.servlet-api:3.1.0"
+
+    runtime "mysql:mysql-connector-java:5.1.20"
+    runtime "javax.servlet:jstl:1.2"
+
+    testRuntime "org.apache.tomcat.embed:tomcat-embed-el:$tomcatVersion"
+    testCompile 'junit:junit:4.12'
+
+    // If using Spock, need to depend on geb-spock
+    testCompile "org.gebish:geb-spock:$gebVersion"
+    testCompile("org.spockframework:spock-core:1.0-groovy-2.4") {
+        exclude group: "org.codehaus.groovy"
+    }
+//    testCompile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    // If using JUnit, need to depend on geb-junit (3 or 4)
+    testCompile "org.gebish:geb-junit4:$gebVersion"
+    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
+
+    providedRuntime "org.apache.tomcat.embed:tomcat-embed-el:$tomcatVersion"
+    providedRuntime "javax.servlet.jsp:jsp-api:2.2"
+    providedRuntime "com.jayway.jsonpath:json-path:0.9.1"
+
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}
+
+

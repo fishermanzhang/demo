@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="zh-cn">
+    <title>修改界面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--<form action="${path}/user/update" method="post">-->
+<form th:action="@{/user/update}" th:method="post">
+    <div>
+        <table>
+            <tr>
+                <td>用户编号</td>
+                <td>
+                    <input type="text" name="userId" th:value="${user1.userId}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>用户姓名</td>
+                <td>
+                    <!--<input type="text" name="username" value="${user.username}">-->
+                    <input type="text" name="username" th:value="${user1.username}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>用户密码</td>
+                <td>
+                    <!--<input type="text" name="password" value="${user.password}">-->
+                    <input type="text" name="password" th:value="${user1.password}"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="修改" id="btn"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                                http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+    <!--When a jta-datasource is used, the default is JTA, if non-jta-datasource is used, RESOURCE_LOCAL is used-->
+    <persistence-unit name="myPersistence" transaction-type="RESOURCE_LOCAL">
+        <!--provided by Hibernate-->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.zhq.entity.User</class>
+
+        <!--exclude unlisted classes-->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <!--<properties>-->
+            <!-- Scan for annotated classes and Hibernate mapping XML files -->
+            <!--<property name="hibernate.archive.autodetection" value="class"/>-->
+        <!--</properties>-->
+
+    </persistence-unit>
+
+</persistence>
