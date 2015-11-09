@@ -7,6 +7,9 @@ defaultTasks 'clean', //清空各种临时文件
         'itTomcatRun', //启动tomcat
         'sit' //集成测试
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
 
 buildscript {
     repositories {
@@ -125,7 +128,7 @@ task itTomcatRun(type: com.bmuschko.gradle.tomcat.tasks.TomcatRun) {
 }
 
 //在 check 之前先启动 daemon tomcat
-check.dependsOn itTomcatRun
+//check.dependsOn itTomcatRun
 
 //运行tomcatRun必须check跑过
 //tomcatRun.dependsOn check
@@ -223,5 +226,4 @@ dependencies {
             "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
             "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
 }
-
 
