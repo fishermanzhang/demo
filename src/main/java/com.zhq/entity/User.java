@@ -4,24 +4,31 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
-
+/**
+ * Created by lenovo on 2015/11/5.
+ * @author 张洪强
+ */
 @Entity
 @Table(name="SpringMVC_User")
 public class User {
 	private Long userId;
-	//@NotNull
-	//@Size(min=3,max=10,message="{user.username.invalid}")
 	private String username;
-	//@NotNull
-	//@Size(min=3,max=10,message="{user.password.invalid}")
 	private String password;
+
+	/**
+	 * 空参构造
+	 */
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
-	
+
+	/**
+	 * 有参构造
+	 * @param userId
+	 * @param username
+	 * @param password
+	 */
 	public User(Long userId, String username, String password) {
 		super();
 		this.userId = userId;
